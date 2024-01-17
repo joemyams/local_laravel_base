@@ -12,5 +12,5 @@ build-local: ## Build local containers
 	@docker build --no-cache . -t local-${BASE_IMAGE_NAME} -f ./Dockerfile.local
 
 build-prod: ## Build Prod containers
-	@docker build --no-cache . -t local-${BASE_IMAGE_NAME} -f ./Dockerfile
+	@docker build --no-cache . -t prod-${BASE_IMAGE_NAME} -f ./Dockerfile
 		
